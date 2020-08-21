@@ -1,0 +1,208 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled7.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyMWatS9pAor0Vc7aYxNk8B5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/19K45A0205/assignment/blob/master/assignment2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uW2vg5oP0yFx",
+        "colab_type": "text"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "59DRVqmrw0Be",
+        "colab_type": "text"
+      },
+      "source": [
+        "1. Area of Triangle :\n",
+        "Given the lengths of three sides of a triangle, calculate the area of\n",
+        "the triangle."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0KacsXDSoggL",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 84
+        },
+        "outputId": "6140edfd-4b9b-45a2-ed3b-b15ec2b2d96b"
+      },
+      "source": [
+        "a=int(input(\"enter the length of side1:\"))\n",
+        "b=int(input(\"enter the length of side2:\"))\n",
+        "c=int(input(\"enter the length of side3:\"))\n",
+        "s=(a+b+c)/2\n",
+        "area=(s*(s-a)*(s-b)*(s-c)**0.5)\n",
+        "print(\"area of the triangle is:\",area)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the length of side1:8\n",
+            "enter the length of side2:9\n",
+            "enter the length of side3:10\n",
+            "area of the triangle is: 625.0906371779216\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LE9f8bVj05ce",
+        "colab_type": "text"
+      },
+      "source": [
+        "2. Take a string from end user and check if the value is palindrome or not"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "eM3jgVGj1IO1",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c2bf9129-69b4-432a-d9f5-d1518aac332c"
+      },
+      "source": [
+        "x=\"artificial intelligence\"\n",
+        "w=\"\"\n",
+        "for i in x:\n",
+        "  w=i+w\n",
+        "  if(x==w):\n",
+        "    print(\"x is a palindrome\")\n",
+        "  else:\n",
+        "    print(\"x is not a palindrome\")\n",
+        "    break"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "x is not a palindrome\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4aW-tQ5P3Okz",
+        "colab_type": "text"
+      },
+      "source": [
+        "3. Write a program that reads a year from the user and displays a message\n",
+        "Indicating whether or not it is a leap year."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rpBX-prc3SXz",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 50
+        },
+        "outputId": "aa6745c7-7f78-4ef3-941d-b389be7eec8b"
+      },
+      "source": [
+        "year=int(input(\"enter the year :\"))\n",
+        "if(year%4==0 and year%100!=0 or year%400==0):\n",
+        "  print(\"the year is a leap year!\")\n",
+        "else:\n",
+        "  print(\"the year is not a leap year!\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the year :2020\n",
+            "the year is a leap year!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "qcAt9xZW7knf",
+        "colab_type": "text"
+      },
+      "source": [
+        "4. Space To Hyphen problem\n",
+        "Take a string as input, and replaces spaces “ “ with hyphens “-”, and\n",
+        "returns a string.\n",
+        "Input: “ This program converts spaces into hyphen”"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pbGpbtOryFt_",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "13a19a93-5dfd-4219-a7cf-ca7367e292ab"
+      },
+      "source": [
+        "input=\"This program converts spaces into hyphen\"\n",
+        "output=input.replace(' ','-')\n",
+        "print(output)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "This-program-converts-spaces-into-hyphen\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
